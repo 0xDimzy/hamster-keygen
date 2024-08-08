@@ -1,125 +1,47 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Updated font */
+    background: linear-gradient(135deg, #f0f0f0, #e0e0e0); /* Gradient background */
+    color: #444; /* Darker text color */
 }
 
 .container {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    max-width: 500px;
-    width: 100%;
-    text-align: center;
-}
-
-h1 {
-    margin-bottom: 20px;
-}
-
-.form-group {
-    margin-bottom: 15px;
-}
-
-label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-select {
-    width: 100%;
-    padding: 10px;
-    font-size: 14px;
-    margin-bottom: 15px;
+    background: rgba(255, 255, 255, 0.9); /* Slightly transparent background */
+    border-radius: 12px; /* More rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+    padding: 30px; /* Increased padding */
 }
 
 button {
     background-color: #007bff;
     color: white;
     border: none;
-    padding: 10px 20px;
-    font-size: 14px;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 12px 24px; /* Increased padding */
+    font-size: 16px; /* Larger font size */
+    border-radius: 8px; /* More rounded button */
+    transition: background-color 0.3s, transform 0.2s; /* Added transition */
 }
-
-
 
 button:hover {
     background-color: #0056b3;
-}
-
-.hidden {
-    display: none;
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
 .progress-bar {
-    background-color: #f0f0f0;
-    border-radius: 5px;
-    overflow: hidden;
-    margin-top: 20px;
-    height: 30px;
-    position: relative;
+    background-color: #e0e0e0; /* Lighter background for progress bar */
 }
 
 .progress-bar div {
-    height: 100%;
     background-color: #007bff;
-    width: 0;
-    transition: width 0.5s;
-}
-
-#progressText {
-    margin-top: 10px;
-    font-weight: bold;
-}
-
-.key-item {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-}
-
-.key-item input {
-    flex: 1;
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-right: 10px;
+    transition: width 0.5s ease-in-out; /* Smooth transition */
 }
 
 .copyKeyBtn {
     background-color: #28a745;
-    border: none;
-    padding: 10px 20px;
-    color: white;
-    font-size: 14px;
-    border-radius: 5px;
-    cursor: pointer;
+    border-radius: 8px; /* More rounded button */
+    transition: background-color 0.3s, transform 0.2s; /* Added transition */
 }
 
 .copyKeyBtn:hover {
     background-color: #218838;
-}
-
-.footer {
-    margin-top: 20px;
-    font-size: 14px;
-}
-
-#copyStatus {
-    margin-top: 10px;
-    color: green;
-}
-
-#telegramChannelBtn{
-    background-color: green;
+    transform: scale(1.05); /* Slightly enlarge on hover */
 }
