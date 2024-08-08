@@ -2,6 +2,11 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Updated font */
     background: linear-gradient(135deg, #f0f0f0, #e0e0e0); /* Gradient background */
     color: #444; /* Darker text color */
+    display: flex; /* Added for centering */
+    justify-content: center; /* Added for centering */
+    align-items: center; /* Added for centering */
+    height: 100vh; /* Added for full height */
+    margin: 0; /* Added to remove default margin */
 }
 
 .container {
@@ -9,6 +14,9 @@ body {
     border-radius: 12px; /* More rounded corners */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Deeper shadow */
     padding: 30px; /* Increased padding */
+    max-width: 500px; /* Added for max width */
+    width: 100%; /* Added for full width */
+    text-align: center; /* Added for center text */
 }
 
 button {
@@ -28,6 +36,10 @@ button:hover {
 
 .progress-bar {
     background-color: #e0e0e0; /* Lighter background for progress bar */
+    border-radius: 5px; /* Added for rounded corners */
+    overflow: hidden; /* Added to hide overflow */
+    height: 30px; /* Added for height */
+    position: relative; /* Added for positioning */
 }
 
 .progress-bar div {
