@@ -3,53 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Promo Hamster Kombat Code Generator</title>
+    <title>KEYGEN Hamster Kombat</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-    <div class="container">
-        <h2>Game Promo Hamster Kombat Code Generator</h1>
-        <div class="form-group">
-            <label for="gameSelect">Select Game</label>
+    <main class="main-container">
+        <section class="container">
+            <h1>KEYGEN Hamster Kombat</h1>
+            <label for="gameSelect" id="gameSelectLabel">Pilih Game :</label>
             <select id="gameSelect">
-                <option value="1">Riding Extreme 3D</option>
-                <option value="2">Chain Cube 2048</option>
-                <option value="3">My Clone Army</option>
-                <option value="4">Train Miner</option>
-                <option value="5">MergeAway</option>
-                <option value="6">Twerk Race</option>
+                <option value="MyCloneArmy">My Clone Army</option>
+                <option value="ChainCube2048">Chain Cube 2048</option>
+                <option value="TrainMiner">Train Miner</option>
+                <option value="BikeRide3D">Bike Ride 3D</option>
+                <option value="MergeAway">Merge Away</option>
+                <option value="TwerkRace">Twerk Race</option>
+                <option value="Polysphere">Polysphere</option>
             </select>
-        </div>
-        <div class="form-group">
-            <label id="keyCountLabel" for="keyCountSelect">Number of keys:</label>
+            <label for="keyCountSelect" id="keyCountLabel">Jumlah kunci yang dihasilkan:</label>
             <select id="keyCountSelect">
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
                 <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
                 <option value="8">8</option>
-                <option value="10">10</option>
             </select>
-        </div>
-        <button id="startBtn">Generate Keys</button>
-        <div id="progressContainer" class="hidden">
-            <div class="progress-bar">
-                <div id="progressBar"></div>
+            <button id="startBtn" class="button">Hasilkan kunci</button>
+            <div id="progressContainer" class="progress-container hidden">
+                <div id="progressBar" class="progress-bar"></div>
+                <span id="progressText" class="progress-text">0%</span>
             </div>
-            <div id="progressText">0%</div>
-            <div id="progressLog">Starting...</div>
-        </div>
-        <div id="keyContainer" class="hidden">
-            <h3 id="generatedKeysTitle" class="hidden">Generated Keys:</h3>
-            <div id="keysList"></div>
-            <button id="copyAllBtn" class="hidden">Copy All Keys</button>
-            <div id="copyStatus" class="hidden">Copied!</div>
-            <button id="generateMoreBtn">Generate More Keys</button>
-        </div>
+            <div id="keyContainer" class="key-container hidden">
+                <h2 id="generatedKeysTitle">Kunci yang dihasilkan:</h2>
+                <button id="copyAllBtn" class="button hidden">Salin</button>
+                <div id="keysList" class="keys-list"></div>
+            </div>
+        </section>
         <div class="footer">
             <p><b> Disclaimer : CODE JANGAN DIJUAL BELIKAN </b></p>
         </div>
-    </div>
-    <script src="script.js"></script>
+    </main>
 </body>
 </html>
