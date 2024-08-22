@@ -7,6 +7,9 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
+    transform: scale(1); 
+    transform-origin: top left; 
+    overflow: hidden;
 }
 
 .container {
@@ -42,7 +45,7 @@ h1 {
 }
 
 .game-option img {
-    width: 100%;
+    width: 80%;
     border-radius: 8px;
     margin-bottom: 10px;
 }
@@ -155,11 +158,11 @@ button:hover {
 
 .key-item input {
     flex: 1;
-    padding: 12px;
-    font-size: 16px;
+    padding: 8px;
+    font-size: 14px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    margin-right: 12px;
+    margin-right: 8px;
 }
 
 .copyKeyBtn {
@@ -177,13 +180,6 @@ button:hover {
     background-color: #218838;
 }
 
-.footer {
-    margin-top: 25px;
-    font-size: 20px;
-    font-weight: bold;
-    color: #ff0000;
-}
-}
 
 #copyStatus {
     margin-top: 15px;
