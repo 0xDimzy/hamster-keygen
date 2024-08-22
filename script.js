@@ -79,6 +79,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             keyCountGroup.classList.remove('hidden');
             startBtn.classList.remove('hidden');
+            const title = option.querySelector('p').innerText;
+        document.getElementById('generatedKeysTitle').innerText = title; 
+        document.getElementById('generatedKeysTitle').classList.remove('hidden'); 
         });
     });
 
