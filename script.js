@@ -274,32 +274,7 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
-    const music = document.getElementById('backgroundMusic');
-    const volumeRange = document.getElementById('volumeRange');
-    const pauseBtn = document.getElementById('pauseBtn');
 
-    // Set initial volume
-    music.volume = volumeRange.value;
-
-    // Update volume based on slider
-    volumeRange.addEventListener('input', (e) => {
-        music.volume = e.target.value;
-    });
-
-    // Pause/Play music
-    pauseBtn.addEventListener('click', () => {
-        if (music.paused) {
-            music.play();
-            pauseBtn.textContent = 'Pause';
-        } else {
-            music.pause();
-            pauseBtn.textContent = 'Play';
-        }
-    });
-
-    // Start playing music
-    music.play();
-    
     const copyToClipboard = (text) => {
         if (navigator.clipboard && navigator.clipboard.writeText) {
             navigator.clipboard.writeText(text).then(() => {
