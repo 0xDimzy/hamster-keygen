@@ -48,6 +48,20 @@ document.addEventListener('DOMContentLoaded', () => {
             promoId: '2aaf5aee-2cbc-47ec-8a3f-0962cc14bc71',
             timing: 20000, // 20 seconds
             attempts: 20,
+        },
+        8: {
+            name: 'Mow and Trim',
+            appToken: 'ef319a80-949a-492e-8ee0-424fb5fc20a6',
+            promoId: 'ef319a80-949a-492e-8ee0-424fb5fc20a6',
+            timing: 20000, // 20 seconds
+            attempts: 20,
+        },
+        9: {
+            name: 'Mud Racing',
+            appToken: '8814a785-97fb-4177-9193-ca4180ff9da8',
+            promoId: '8814a785-97fb-4177-9193-ca4180ff9da8',
+            timing: 20000, // 20 seconds
+            attempts: 20,
         }
     };
 
@@ -79,9 +93,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
             keyCountGroup.classList.remove('hidden');
             startBtn.classList.remove('hidden');
-            const title = option.querySelector('p').innerText;
-        document.getElementById('generatedKeysTitle').innerText = title; 
-        document.getElementById('generatedKeysTitle').classList.remove('hidden'); 
         });
     });
 
